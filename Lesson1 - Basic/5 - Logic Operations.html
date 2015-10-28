@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logic Operations</title>
+</head>
+<body>
+
+    <script>
+        var number = prompt("Введите число: ");
+
+        if(number) {
+            if(Number(number)) {
+                if(number > 10) {
+                    alert("Число больше 10-и");
+                }
+                else if(number == 10) {
+                    alert("Число равно 10-и");
+                }
+                else if(number < 10) {
+                    alert("Число меньше 10-и");
+                }
+            }
+            else {
+                alert("Ошибка! Число не число!");
+            }
+        }
+        else {
+            alert("Пустое значение");
+        }
+
+    </script>
+
+</body>
+</html>
