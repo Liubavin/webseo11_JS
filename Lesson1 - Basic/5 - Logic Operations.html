@@ -10,7 +10,7 @@
         var number = prompt("Введите число: ");
 
         if(number) {
-            if(Number(number)) {
+            if(!isNaN(Number(number))) {
                 if(number > 10) {
                     alert("Число больше 10-и");
                 }
