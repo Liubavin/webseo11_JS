@@ -8,11 +8,13 @@
 <script>
     var action = "", i = 0;
 
-    while(action != "close") {
+    while(action != "close" && i < 10) {
         action = prompt("Action: ");
         alert(i + ": " + action);
         i++;
     }
+
+
 </script>
 </body>
 </html>
