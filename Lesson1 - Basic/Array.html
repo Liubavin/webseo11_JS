@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+
+<script>
+    var colors = ["Blue", "Yellow", "Red", "Green"];
+
+    // получение элемента массива по индексу
+    console.log( colors[1] );
+    console.log( colors );
+
+    // изменение элемента массива
+    colors[1] = "Gray";
+    console.log( colors );
+
+    console.log("Size: " + colors.length);
+
+    // добавление в конец массива при помощи Array.length
+    colors[colors.length] = "Violet";
+    console.log( colors );
+    console.log("Size: " + colors.length);
+
+    // добавление в конец массива при помощи Array.push()
+    colors.push("Orange");
+    console.log( colors );
+    console.log("Size: " + colors.length);
+
+    // прохождения по массиву при помощи цикла while
+    /*var i = 0;
+    while(i < colors.length) {
+        document.write(colors[i] + "<br>");
+        i++;
+    }*/
+
+    // прохождение по массиву при помощи цикла for
+    for (var i = 0; i < colors.length; i++) {
+        document.write(colors[i] + "<br>");
+    }
+
+    // инициализация массива значениями при помощи цикла
+    var numbers = [];
+    for (var i = 20; i <= 30; i++) {
+        numbers.push(i);
+    }
+    console.log(numbers);
+
+</script>
+
+</body>
+</html>
