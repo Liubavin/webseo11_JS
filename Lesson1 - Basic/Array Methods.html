@@ -11,28 +11,71 @@
     console.log(colors);
 
     // reverse (массив в обратном порядке)
-    console.info("Array.reverse()");
+    console.info("--- Array.reverse() ---");
     colors.reverse();
     console.log(colors);
 
     // push - добавление элемента в конец масива
-    console.info("Array.push(elem)");
+    console.info("--- Array.push(elem) ---");
     colors.push("Orange");
     console.log(colors);
 
-    // pop - достайт элемент из кучи (с конца)
+    // pop - достаёт элемент из кучи (с конца)
     // удаляет из массива
-    console.info("Array.pop()");
+    console.info("--- Array.pop() ---");
     var lastColor = colors.pop();
     console.log("Popped: " + lastColor);
     console.log(colors);
 
-    // shift - достайт элемент из череди (с начала)
+    // shift - достаёт элемент из очереди (с начала)
     // удаляет из массива
-    console.info("Array.shift()");
+    console.info("--- Array.shift() ---");
     var shifted = colors.shift();
     console.log("Shifted: " + shifted);
     console.log(colors);
+
+    // unshift - добавляет элементы в начало массива
+    // возвращает конечный размер массива
+    console.info("--- Array.unshift(elem1, elem2, ... , elemN) ---");
+    var length = colors.unshift("Violet", "Orange");
+    console.log("Length: " + length);
+    console.log(colors);
+
+    // join()
+    console.info("--- Array.join() ---");
+    var str = colors.join("; ");
+    console.log("Joined: " + str);
+
+    // slice(start, [end])
+    console.info("--- Array.slice(start, [end]) ---");
+    console.log(colors.slice(1, 5));
+
+    // splice()
+    console.info("--- Array.splice(index, count, [elem1, ...]) ---");
+    console.log(colors);
+
+    // удаление 2-х элеменмтов с позиции 2
+    console.info("colors.splice(2, 2);");
+    colors.splice(2, 2);
+    console.log(colors);
+
+    // добавление элементов в позицию 3
+    console.info('colors.splice(3, 0, "Red", "Green");');
+    colors.splice(3, 0, "Red", "Green", "Black");
+    console.log(colors);
+
+    // sort()
+    colors.sort();
+    console.log(colors);
+
+    // поменять два элемента местами
+    console.info("поменять два элемента местами");
+    var temp = colors[1];
+    colors[1] = colors[2];
+    colors[2] = temp;
+
+    console.log(colors);
+
 
 </script>
 
