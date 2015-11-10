@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions</title>
+</head>
+<body>
+
+<script>
+
+    // обявление ф-ции
+    function sayHello() {
+        // описание ф-ции
+        alert('Hello!!!');
+    }
+
+    // объявление ф-ции в качестве переменной
+    var sayBye = function() {
+        alert("Bye!!!");
+    };
+
+    // передача функции в переменную
+    var sb = sayBye;
+    sb();
+
+    // вызов ф-ции
+    sayHello();
+    sayBye();
+
+
+</script>
+
+</body>
+</html>

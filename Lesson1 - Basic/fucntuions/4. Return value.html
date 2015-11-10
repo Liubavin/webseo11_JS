@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function Return Value</title>
+</head>
+<body>
+
+<script>
+
+    function sum(a, b) {
+        if(a === undefined || b === undefined) {
+            return;
+        }
+        return (a + b);
+    }
+
+    // получаем и выводим результат ф-ции
+    var result = sum(11, 3);
+    alert(result);
+
+    // более коротка альтернатива
+    alert(sum(11, 4));
+
+
+
+    function square(x) {
+        return x * x;
+    }
+    result = square(4);
+    console.log(result);
+</script>
+
+</body>
+</html>

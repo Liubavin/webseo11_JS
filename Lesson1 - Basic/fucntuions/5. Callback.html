@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Callbacks</title>
+</head>
+<body>
+
+    <script>
+
+        function readMessages(callback) {
+            var message = "";
+
+            while(message != "-close") {
+                message = prompt("Message");
+                document.write(message + "<br>");
+            }
+
+            document.write("End of reading...");
+            callback();
+        }
+
+        function onEnd() {
+            console.log("Callback: End of reading...");
+        }
+
+        readMessages(onEnd);
+
+        readMessages(
+            function() {
+                alert('Reading closed!');
+            }
+        );
+
+    </script>
+
+</body>
+</html>
