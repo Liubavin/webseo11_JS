@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String Object</title>
+</head>
+<body>
+
+    <script>
+        var str = 'Hello World!!!';
+
+        // вывоит длину строки в символах
+        console.info("length");
+        console.log(str.length);
+
+        // возвращает строку в нижнем регистре
+        console.info("toLowerCase()");
+        console.log(str.toLowerCase());
+
+        // возвращает строку в верхнем регистре
+        console.info("toUpperCase()");
+        console.log(str.toUpperCase());
+
+        // возвращает символ строки с определённой позиции
+        // отсчёт начинается от нуля
+        console.info("charAt(6)");
+        console.log(str.charAt(6));
+
+        // возвращает код символа в определённой позиции
+        // отсчёт начинается от нуля
+        console.info("charCodeAt(6)");
+        console.log(str.charCodeAt(6));
+
+        // возвращает символ по его коду
+        console.info("String.fromCharCode(87,66,67)");
+        console.log(String.fromCharCode(87, 66, 67, 341));
+
+        /*for (var i = 0; i < 9999; i++) {
+            document.write(i + ": " + String.fromCharCode(i) + "<br>");
+        }*/
+
+        // возвращает часть строки
+        console.info("substr(6, 5)");
+        console.log(str.substr(6, 5));
+
+        console.info("substring(6, 12)");
+        console.log(str.substring(6, 12));
+
+        // разделяет строку на части
+        // возвращает массив
+        console.info("split(' ')");
+        console.log(str.split(' ', 5));
+
+        // последний индекс вхождения подстроки в строку
+        console.info("str.lastIndexOf('l')");
+        console.log(str.lastIndexOf("l"));
+
+        // возвращает первый индекс вхождения подстроки в строку
+        function firstIndexOf(string, search) {
+            for (var i = 0; i < string.length; i++) {
+                if(string.charAt(i) == search)
+                    return i;
+            }
+        }
+
+        console.info("firstIndexOf('Hello World!!!', 'l')");
+        console.log(firstIndexOf(str, 'l'));
+    </script>
+
+</body>
+</html>
