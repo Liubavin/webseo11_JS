@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Object</title>
+</head>
+<body>
+
+<script>
+    // возвращает модуль числа
+    var abs = Math.abs(-44);
+    console.info("Math.abs(-44)");
+    console.log(abs);
+
+    // обычное округление
+    var rounded = Math.round(10.44);
+    console.info("Math.round(10.44)");
+    console.log(rounded);
+
+    // обычное округление
+    var floored = Math.floor(10.66);
+    console.info("Math.floor(10.66)");
+    console.log(floored);
+
+    // обычное округление
+    var ceil = Math.ceil(10.44);
+    console.info("Math.ceil(10.44)");
+    console.log(ceil);
+
+    // возвращает максимальное число из ряда чисел
+    var max = Math.max(22, 44, 4, 77, 7, 22);
+    console.info("Math.max(22, 44, 4, 77, 7, 22)");
+    console.log(max);
+
+    // возвращает минимальное число из ряда чисел
+    var min = Math.min(22, 44, 4, 77, 7, 22);
+    console.info("Math.min(22, 44, 4, 77, 7, 22)");
+    console.log(min);
+
+    // возводит число в степень
+    var pow = Math.pow(3, 8);
+    console.info("Math.pow(3, 8);");
+    console.log(pow);
+
+    // возвращает квадратный корень от числа
+    var sqrt = Math.sqrt(9);
+    console.info("Math.sqrt(9)");
+    console.log(sqrt);
+
+    // возвращает случайное число от 0 до 1
+    var rnd = Math.round(Math.random() * 100);
+    console.info("Math.round(Math.random() * 100)");
+    console.log(rnd);
+
+    // возвращает случайное число
+    // принимает "от" и "до"
+    function rand(from, to) {
+        return Math.round(Math.random() * (to - from)) + from;
+    }
+</script>
+
+</body>
+</html>
