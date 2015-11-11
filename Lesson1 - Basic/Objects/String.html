@@ -65,6 +65,24 @@
 
         console.info("firstIndexOf('Hello World!!!', 'l')");
         console.log(firstIndexOf(str, 'l'));
+
+        // возвращает первый индекс вхождения подстроки в строкуconsole.info("firstIndexOf('Hello World!!!', 'l')");
+        console.info("str.search('l')");
+        console.log(str.search('l'));
+
+        // все позиции символа
+        function allIndexOf(string, search) {
+            var resultArr = [];
+            for (var i = 0; i < string.length; i++) {
+                if(string.charAt(i) == search) {
+                    resultArr.push(i);
+                }
+            }
+            return resultArr;
+        }
+
+        console.info("allIndexOf(str, 'l')");
+        console.log(allIndexOf(str, 'l'));
     </script>
 
 </body>
